@@ -1,0 +1,20 @@
+.page {
+  font-size: 1.1rem;
+  border-left: 2px solid transparent;
+  padding-left: 7px;
+  transition: 0.2s;
+}
+
+.page:hover {
+  color: var(--surface-700);
+}
+
+.underline {
+  position: absolute;
+  left: 27px;
+  right: 0;
+  margin-top: -40px;
+  height: 25px;
+  width: 2px;
+  background: var(--surface-700);
+}
