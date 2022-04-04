@@ -101,7 +101,7 @@ const Index: NextPage = () => {
                 This is a tool made mainly for people who use trading bots
                 allows you to easily convert lists of item names into skus and
                 vice versa. The SKUS are currently generated following
-                marketplace.tf's standards.
+                marketplace.tf&apos;s standards.
               </p>
             </Card>
           </AnimateScaler>

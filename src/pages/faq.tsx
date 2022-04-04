@@ -33,8 +33,8 @@ const Index: NextPage = () => {
                 </AccordionTab>
                 <AccordionTab header="How is it funded?">
                   <p>
-                    It's quite simple really, it's not funded! It is currently
-                    running on a free tier of netlify hosting.
+                    It&aposs quite simple really, it&aposs not funded! It is
+                    currently running on a free tier of netlify hosting.
                   </p>
                 </AccordionTab>
                 <AccordionTab header="How can I contribute?">
