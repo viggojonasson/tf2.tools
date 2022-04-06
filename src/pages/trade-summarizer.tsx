@@ -71,7 +71,7 @@ const Index: NextPage = () => {
         <div className="col-12 lg:col-4">
           <PageSelector />
         </div>
-        <div className="lg:col-8 sm:col-12">
+        <div className="lg:col-8 col-12">
           <AnimateScaler>
             <Card
               title="What's this?"

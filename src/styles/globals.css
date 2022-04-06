@@ -46,3 +46,7 @@ html {
 .link-group a:hover {
   color: var(--blue-200);
 }
+
+.p-menubar-button {
+  display: none !important; /* ez fix */
+}

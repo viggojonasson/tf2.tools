@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Navbar />
       <div className="m-2">
         <Component {...pageProps} />
-        <div className="made-by-footer">
+        <div className="made-by-footer hidden lg:block">
           <Link href="https://steamcommunity.com/id/aethez">
             <a target="_blank" className="text-white no-underline">
               made by aethez
