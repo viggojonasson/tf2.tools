@@ -25,6 +25,7 @@ const Index: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [splitChar, setSplitChar] = useState("");
+  const [joinChar, setJoinChar] = useState("");
   const [input, setInput] = useState("");
   const [showDiag, setShowDiag] = useState(false);
   const [result, setResult] = useState<ConversionResult>();
@@ -82,7 +83,7 @@ const Index: NextPage = () => {
           autoResize
           rows={1}
           style={{ width: "100%" }}
-          value={result?.result.join("\n")}
+          value={result?.result.join(joinChar === "" ? "\n" : joinChar)}
           onFocus={(e) => e.target.select()}
         ></InputTextarea>
       </Dialog>
@@ -136,8 +137,16 @@ const Index: NextPage = () => {
                       style={{ width: "100%" }}
                       id="splitChar"
                       value={splitChar}
-                      placeholder="Split Character"
+                      placeholder="Split Character default: \n"
                       onChange={(e) => setSplitChar(e.target.value)}
+                    />
+                    <InputText
+                      style={{ width: "100%" }}
+                      id="splitChar"
+                      value={joinChar}
+                      placeholder="Join Character default: \n"
+                      onChange={(e) => setJoinChar(e.target.value)}
+                      className="mt-1"
                     />
                   </motion.div>
                 )}
@@ -157,8 +166,9 @@ const Index: NextPage = () => {
                     onChange={(e) => setInput(e.target.value)}
                     placeholder={
                       "Split each item identifierer by a " +
-                      (splitChar === "" ? "space" : `${splitChar}`) +
-                      " character!"
+                      (splitChar === ""
+                        ? "new line!"
+                        : `${splitChar} character!`)
                     }
                   />
                   <Button

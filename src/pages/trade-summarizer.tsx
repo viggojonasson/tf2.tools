@@ -80,7 +80,7 @@ const Index: NextPage = () => {
               <p className="m-0">
                 This is a tool that counts amount of pure that is in a trade.
                 Head to{" "}
-                <Link href="https://steamcommunity.com/id/aethez/tradehistory">
+                <Link href="https://steamcommunity.com/my/tradehistory">
                   <a target="_blank" className="text-blue-500">
                     your trade history
                   </a>
